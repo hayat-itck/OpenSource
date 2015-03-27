@@ -3,21 +3,24 @@
 class Ossite extends CI_Controller{
 	public function index() {
 		//$this->helloWorld();
-		$this->Sum(34,65);
+		//$this->Sum(34,65);
 		$this->calculatorView();
+		//$this->home();
 	}
 	public function helloWorld() {
 		echo "</br> This is Hello World Function </br>";
 	}
 	public function Sum($i,$j) {
-		$arr["Name"] = "Hayatullah";
-		$this->load->model("Calculator",$arr);
+		
+		$this->load->model("Calculator");
 		echo $this->Calculator->add($i,$j);
 	}	
 	public function calculatorView() {
-		$this->load->view("calc-view");
+		$arr["Name"] = "Hayatullah";
+		$this->load->view("calc-view",$arr);
 	}
+	
+	public function home() {
+			$this->load->view("home");
+		}
 }
-
-
-

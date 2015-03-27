@@ -14,6 +14,7 @@ input{
 <body>
 	<div id="main">
 			<h1>Simple Calculator</h1>
+			<a href="index">Calculator</a> | <a href="home">Home</a>
 			<p>This is a simple View created with CodIgniter</p>
 	</div>
 	<div>

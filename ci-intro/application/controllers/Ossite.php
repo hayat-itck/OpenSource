@@ -5,6 +5,7 @@ class Ossite extends CI_Controller{
 		//$this->helloWorld();
 		//$this->Sum(34,65);
 		$this->calculatorView();
+		//$this->home();
 	}
 	public function helloWorld() {
 		echo "</br> This is Hello World Function </br>";
@@ -18,7 +19,8 @@ class Ossite extends CI_Controller{
 		$arr["Name"] = "Hayatullah";
 		$this->load->view("calc-view",$arr);
 	}
+	
+	public function home() {
+			$this->load->view("home");
+		}
 }
-
-
-
